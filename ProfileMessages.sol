@@ -21,7 +21,7 @@ contract ProfileMessages {
     } 
     
     struct Base_Profile {
-        uint256 index;
+        uint256 profile_id;
         string usersName;
         string userGender; //Currently only Male and Female for end user.
         uint userAge;
@@ -56,9 +56,8 @@ contract ProfileMessages {
         uint[] comments;
   }
    
-   mapping (address => Base_Profile) private allUsers;
-   mapping (uint => Base_Profile) private date;
-   address [] public everyUser;
+   mapping (address => Base_Profile) allUsers;
+   mapping (uint => Base_Profile) date;
    
     
     uint256[] public messageOrder;
@@ -67,15 +66,17 @@ contract ProfileMessages {
         return messageOrder.length;
   }
   
-  /* function isUser(address _userAddress) public view returns(bool isIndeed) {
+   function isUser(address _userAddress) public view returns(bool isIndeed) {
      // if the list is empty, the requested user is not present
-        if(everyUser.length == 0) return false;
+        if(allUsers[_userAddress].profile_id == 0){
+             return false;
+        }
         // true = exists
-        return (everyUser[allUsers[_userAddress].index] == _userAddress);
-      } */
+        return true;
+      }
   
   function createMessage(string memory _content) public returns(uint256 index) {
-   /* require(isUser(msg.sender)); */
+  /*  require(isUser(msg.sender)); */
     require(bytes(_content).length > 0);
    /* require(msg.value >= 0);*/
     uint256 msgId = messageOrder.length;
@@ -94,7 +95,7 @@ contract ProfileMessages {
     return (messageStructs[_id].likes[likerRow] == _user);}
     
   function likeMessage(uint256 _id) public returns(uint256 newlikes) {
- /*   require(isUser(msg.sender)); */
+    require(isUser(msg.sender)); 
     require(_id < messageOrder.length);
     // require that a user can not like a message twice
     require(!isMessageLiker(msg.sender, _id));
@@ -103,7 +104,7 @@ contract ProfileMessages {
     return (messageStructs[_id].likes.length);
   }
   function unlikeMessage(uint256 _id) public returns(uint256 newlikes) {
- /*   require(isUser(msg.sender)); */
+    require(isUser(msg.sender)); 
     require(_id < messageOrder.length);
     require(messageStructs[_id].likes.length > 0);
     // require that a user can not unlike a message twice
