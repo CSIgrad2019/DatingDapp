@@ -4,7 +4,7 @@
 ###### _Image source: https://miro.medium.com/max/700/0*XSb3YHGA26AJPbhm.jpg_
 <p align="center">
     <ins><b>DateCoin - Love on the Block:</b><br><ins>
-    <img src=images/DateCoin_Logo.png>
+    <img src=images/DateCoin_Logo.PNG>
 </p>
 
 ## Background
