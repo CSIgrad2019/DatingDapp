@@ -11,7 +11,7 @@ from web3.auto import w3
 
 pinata_api_key = "193c5085d014ac725ebb"
 pinata_secret_api_key = "a6ca8bdad93af5e509affc71e8861a7d16ad30295ba478b8e5692e8208422dcd"
-DateCoin_address = "0x72F4460668C6003b020c600D6158B992f089cdeB" #the contract address of the contract after deployment
+DateCoin_address = "0xC0777C0aEa664bD6D55576069EFFE3680279d070" #the contract address of the contract after deployment
 
 headers = {
     "Content-Type": "application/json",
@@ -21,25 +21,28 @@ headers = {
 
 
 def initContract():
-    with open(Path("DateCoin.json")) as json_file:  #Need DateCoin ABI saved as json file.
+    with open(Path("DatingCoin.json")) as json_file:  #Need DateCoin ABI saved as json file.
         abi = json.load(json_file)
 
     return w3.eth.contract(address=DateCoin_address, abi=abi)
 
 #function to help us convert data to json.
-def convertDataToJSON(Username,Gender, Age, Bio, Email):
+def convertDataToJSON(Username,Gender, Age, Bio, Pic, Likes_females, Likes_males, Likes_others):
     data = {
         "pinataOptions": {"cidVersion": 1},
         "pinataContent": {
-            "usersName": Username,
-            "image": "ipfs://NEED PICTURE OF SOMEONE",
-            "userGender": Gender,
-            "userAge": Age,
-            "userBio": Bio,
-            "userEmail": Email,
+            "Name": Username,
+            "Gender": Gender,
+            "Age": Age,
+            "Bio": Bio,
+            "image": Pic,
+            "Likes Females": Likes_females,
+            "Likes Males": Likes_males,
+            "Likes Others": Likes_others,
+            "Update Uri" : "ipfs://bafybeicqfzuz7dzs22723pv6qnup4tggkv44w4icuhun6mkbngelho2mte",
         },
     }
-    return json.dumps(data)
+    return json.dumps(data, indent=4)
 
 
 def pinJSONtoIPFS(json):
