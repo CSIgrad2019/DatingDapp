@@ -73,6 +73,9 @@ In the ProfileMessages contract we created two structs that serve as a tier base
 <p> In conclusion, additional time is needed to make this project usable for the public as we are unable to create a user friendly frontend platform were the user can easily interact with the system as well as other users. We think with adequate time the solidity we are currently working with is sufficient to deploy a fully functional dating application that can be ready for the real world with minimal adjustments.
 
 
+## Enjoy a quick Demo of the Solidity Contract Deployment:
+
+<img src= images/DatingCoin-Demo.gif>
 
 
 
