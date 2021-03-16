@@ -49,7 +49,7 @@ These steps will run via your metamask and create a coin that you can view in yo
 ## DatingCoin
 As illustrated in the GIF below, in this file we created our coin (DATE) using the ERC721Full standard. We developed tiered profiles that change based on the amount of information the user inputs.
 
-![test](images/Screenshot.gif)
+
 
 ## Profile Functions
 
@@ -62,6 +62,8 @@ In the ProfileMessages contract we created two structs that serve as a tier base
 
 ## Profile Tokenization
 <p> In order to tokenize each profile we had to create a registeredUser function within the solidity file. This function is a public function that takes in the owner address as a parameter. The function then mints a token and takes in the users profile into the token as an empty profile that then needs to be filled in by the user when registereing. Each token is counted using the import Counter from OpenZeppellin as noted above. 
+  
+<img src= images/Tokenization.PNG>
 
 
 
