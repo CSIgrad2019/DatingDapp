@@ -40,6 +40,10 @@ These steps will run via your metamask and create a coin that you can view in yo
 
 ## Profile Interface
 <p> Using Python we were able to create a basic interactive user interface that runs on terminal that would allow the user to create a profile and using IPFS (Interplanetary File System) we were able to code the addition of an image that is necesary for a dating profile. The profile takes into account the basics for person to begin some kind of interaction with other users: Username, age, bio, email, and gender. In order to connect the required python files with the contract we had to use web3, the solidity contract ABI and create special functions that will convert the ABI to a json file to be read in python.
+  
+  
+<img src= images/Python_Profile.PNG>
+<img src= images/PrintingProfile_Python.PNG>
 
 
 ## DatingCoin
