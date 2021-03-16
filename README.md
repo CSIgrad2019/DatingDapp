@@ -53,7 +53,7 @@ As illustrated in the GIF below, in this file we created our coin (DATE) using t
 
 ## Profile Messages
 
-In the ProfileMessages contract we created two structs that serve as a tier based system. These tiers allow users to input information about themselves in order to better serve our filtering system. Tier2 consisits of Ehtnicity, languages, zzodiac,profession, and education level. Tier3 adds an additonal level of filter so users can have an increased chance of finding quality matches. tier3 consists of kids, looking for, religon, interests, and build. 
+In the ProfileMessages contract we created two structs that serve as a tier based system. These tiers allow users to input information about themselves in order to better serve our filtering system. Tier2 consisits of Ehtnicity, languages, zodiac,profession, and education level. Tier3 adds an additonal level of filter so users can have an increased chance of finding quality matches. tier3 consists of kids, looking for, religon, interests, and build. 
 
 
 ## Profile Tokenization
