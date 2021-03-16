@@ -42,11 +42,10 @@ After compiling you should Deploy the contract in order to begin creating the pr
 These steps will run via your metamask and create a coin that you can view in your Metamask wallet. 
 
 ## Profile Interface
-<p> Using Python we were able to create a basic interactive user interface that runs on terminal that would allow the user to create a profile and using IPFS (Interplanetary File System) we were able to code the addition of an image that is necesary for a dating profile. The profile takes into account the basics for person to begin some kind of interaction with other users: Username, age, bio, email, and gender. In order to connect the required python files with the contract we had to use web3, the solidity contract ABI and create special functions that will convert the ABI to a json file to be read in python. Unfortunatley, this python code is only partially working and can prompt for a profile and produce the Profile URI containing the IPFS hash with the user information and possible image.
+<p> Using Python we were able to create a basic interactive user interface that runs on terminal that would allow the user to create a profile and using IPFS (Interplanetary File System) we were able to code the addition of an image that is necesary for a dating profile. The profile takes into account the basics for person to begin some kind of interaction with other users: Username, age, bio, email, and gender. In order to connect the required python files with the contract we had to use web3, the solidity contract ABI and create special functions that will convert the ABI to a json file to be read in python. Using Python, the user is able to update prpfiles and "get" the most recent profile as requested in the terminal command prompt. Unfortunately, we were unable to enable filtering with the python code and it is something we are looking to add in the future. 
   
-  
-<img src= images/Python_Profile.PNG>
-<img src= images/PrintingProfile_Python.PNG>
+<img src= images/New-ProfilePY.PNG>
+
 
 
 ## DatingCoin
