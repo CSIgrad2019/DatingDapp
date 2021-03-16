@@ -52,7 +52,7 @@ As illustrated in the GIF below, in this file we created our coin (DATE) using t
 
 
 ## Profile Functions
-
+In the Profile Functions contract, we utilized the LogUpdateUser and inactiveUser functions in order to build the user profile and also to deactivate the user profile. Within the profile construction, we set up the ability to edit username, gender, age, bio, ipfs hash, and preference features. The reason we set up a deactivation funciton is because we anticipated users to have a higher churn rate. We also created this function in order to deactivate the profiles that are inactive after 30 days. Thus, a higher churn rate is a result of the more effective matching.
 
 
 ## Profile Messages
