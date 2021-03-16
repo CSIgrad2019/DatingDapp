@@ -1,10 +1,10 @@
 
 
 <img src= images/crypto-love.jpg><br>
+###### _Image source: https://miro.medium.com/max/700/0*XSb3YHGA26AJPbhm.jpg_
 # **DatingDapp - Love on the block**
 
 ## Background
-<hr>
 <p> Utlizing blockchain technology we have developed a dating dapp that will allow greater secuirty to its users by having a tiered structure of dating profiles and additinally provide each user the ability to send & receive encrypted messages. 
 </p>
 
@@ -17,7 +17,6 @@
 - JSON
 - IPFS
 - OpenZeppelin
-<hr>
 
 ## Profile Interface
 Working with Python, Web3, JSON and Piñata the user profile interface was created.
