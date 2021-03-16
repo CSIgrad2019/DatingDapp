@@ -2,7 +2,10 @@
 
 <img src= images/crypto-love.jpg><br>
 ###### _Image source: https://miro.medium.com/max/700/0*XSb3YHGA26AJPbhm.jpg_
-# **DatingDapp - Love on the block**
+<p align="center">
+    <ins><b>DateCoin - Love on the Block:</b><br><ins>
+    <img src=images/DateCoin_Logo.png>
+</p>
 
 ## Background
 <p> Utilizing blockchain technology we have developed a dating Dapp that will allow greater security to its users by having a tiered structure of tokenized dating profiles using the ERC721 standard for NFTs (Non-Fungible Tokenization) allowing each user the ability to send & receive encrypted messages, match with users based on profile parameters on their token and a reduction of "user-bots" which currently represent a nuisance in current social-dating applications. 
