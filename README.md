@@ -54,11 +54,13 @@ As illustrated in the GIF below, in this file we created our coin (DATE) using t
 ## Profile Functions
 In the Profile Functions contract, we utilized the LogUpdateUser and inactiveUser functions in order to build the user profile and also to deactivate the user profile. Within the profile construction, we set up the ability to edit username, gender, age, bio, ipfs hash, and preference features. The reason we set up a deactivation funciton is because we anticipated users to have a higher churn rate. We also created this function in order to deactivate the profiles that are inactive after 30 days. Thus, a higher churn rate is a result of the more effective matching.
 
+<img src= images/Profile_Functions.PNG>
 
 ## Profile Messages
 
 In the ProfileMessages contract we created two structs that serve as a tier based system. These tiers allow users to input information about themselves in order to better serve our filtering system. Tier2 consisits of Ehtnicity, languages, zodiac,profession, and education level. Tier3 adds an additonal level of filter so users can have an increased chance of finding quality matches. tier3 consists of kids, looking for, religon, interests, and build. 
 
+<img src= images/Message.PNG>
 
 ## Profile Tokenization
 <p> In order to tokenize each profile we had to create a registeredUser function within the solidity file. This function is a public function that takes in the owner address as a parameter. The function then mints a token and takes in the users profile into the token as an empty profile that then needs to be filled in by the user when registereing. Each token is counted using the import Counter from OpenZeppellin as noted above. 
